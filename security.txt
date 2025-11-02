@@ -1,0 +1,6 @@
+# security.txt for laptop.spencers.zone
+
+Contact: webmaster@spencers.zone
+Encryption: https://pki.goog/, https://www.digicert.com/about, https://letsencrypt.org/how-it-works/
+Preferred-Languages: en
+Expires: 2026-11-02T21:58:21Z32
