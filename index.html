@@ -23,8 +23,9 @@
 
     .slideshow-container {
       position: relative;
-      width: 600px;
-      height: 800px;
+      width: 90%;
+      max-width: 800px;
+      aspect-ratio: 4 / 3; /* keeps proportions of most screens */
       overflow: hidden;
       border-radius: 16px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -32,11 +33,14 @@
 
     .slide {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
+      object-fit: contain; /* no cropping; full image visible */
+      background: #000; /* fill behind transparent or differently sized images */
       opacity: 0;
       transition: opacity 1.5s ease-in-out;
-      object-fit: cover;
     }
 
     .slide.active {
